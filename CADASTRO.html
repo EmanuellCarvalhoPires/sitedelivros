@@ -9,117 +9,97 @@
 </head>
 <body>
     <!-- Barra de navegação padrão -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Livraria Sci-fi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-    <link href="navbar-top-fixed.css" rel="stylesheet">
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-      </style>
-    <nav class="navbar navbar-expand-lg navbar-light custom-bg" >
-        <div class="container-fluid" >
-          <a id="titulo" class="navbar-brand" href="index.html">
-            <style>
-                #titulo{
-                    color: aliceblue;
-                    font-size: 20px;
-                    margin: 0px 20px; 
-                    
-                }
-            </style> 
-            <strong>Livraria<br> Sci-fi</strong>
-        </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Login</a>
-      </li>
-    </ul>
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="container-main" class="border bg-light.bg-gradient rounded-1" type="submit" >Search</button>
+    <!-- Formulário de Login -->
+    <form class="formulario">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Você é Estudante?</label>
+        </div>
+
+        <!-- Formulário de SouEstudante -->
+        <div class="mb-3" id="SouEstudanteHIDE" style="display:none;">
+            <label class="form-label">Qual seu grau escolar?</label>
+            <select class="form-select mb-3">
+                <option value="">Selecione uma opção</option>
+                <option>Cursando ensino superior</option>
+                <option>Ensino superior completo</option>
+                <option>Cursando ensino médio</option>
+                <option>Ensino médio completo</option>
+            </select>
+
+            <label class="form-label">Qual o nome da sua instituição de ensino?</label>
+            <input type="text" class="form-control mb-3" placeholder="">
+
+            <label class="form-label">Qual seu CPF?</label>
+            <input type="text" class="form-control mb-3" placeholder="">
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="FieldsetCheck">
+                <label class="form-check-label" for="FieldsetCheck">Marque para anexar arquivo</label>
+            </div>
+
+            <div class="mb-3" id="campoAnexo" style="display:none;">
+                <label for="anexo" class="form-label">Anexar arquivo:</label>
+                <input type="file" class="form-control-file" id="anexo" name="anexo">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
-  </div>
-</div>
-</nav>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-FkPB6lSNdZP+vLz1vPvcNBR5PMB2cGG7pG8+5lWYwVZlVL+0aKki04bc5YYH+oVX" crossorigin="anonymous"></script>
 
-            <!-- Formulário de Login -->
-            <form class="formulario">
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label="form-check-label" >Você é Estudante?</label>
-                </div>
-                
+    <script>
+        $(document).ready(function () {
+            $('#exampleCheck1').change(function () {
+                if ($(this).is(':checked')) {
+                    $('#SouEstudanteHIDE').slideDown();
+                } else {
+                    $('#SouEstudanteHIDE').slideUp();
+                }
+            });
 
-              <!--Formulário de SouEstudante-->
-          
-              <div id="SouEstudanteHIDE" style="display:none;">
-
-                <form>
-                  <fieldset >
-                    
-                    <div class="mb-3">
-                      <label>Qual seu grau escolar?</label>
-                      <label for="disabledSelect" class="form-label"></label>
-                      <select id="Select1" class="form-select">
-                        <option value="">Selecione uma opção</option>
-                        <option>Cursando ensino superior</option>
-                        <option>Ensino superior completo</option>
-                        <option>Cursando ensino médio</option>
-                        <option>Ensino médio completo</option>
-                      </select>
-                    </div>
-                  
-    
-                    <div class="mb-3">
-                      <label  class="form-label">Qual o nome da sua instituição de ensino?</label>
-                      <input type="text" class="form-control" placeholder="">
-                    </div>
-                    
-                    <div class="mb-3">
-                      <label  class="form-label">Qual seu CPF?</label>
-                      <input type="text" class="form-control" placeholder="">
-                    </div>
-    
-                    <div class="mb-3">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="FieldsetCheck" >
-                        <label class="form-check-label" for="disabledFieldsetCheck">
-                          Possui documento de matrícula?
-                        </label>
-                        <div id="documentoMatricula" style="display: none;">aaaaaaaaaaaaaaaaaaaa</div>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </fieldset>
-                </form>
+            $('#FieldsetCheck').change(function () {
+                if ($(this).is(':checked')) {
+                    $('#campoAnexo').slideDown();
+                } else {
+                    $('#campoAnexo').slideUp();
+                }
+            });
+        });
+    </script>
 </body>
-
-<footer> <script src="EstudanteIF.js"></script> </footer>
 </html>
