@@ -28,3 +28,25 @@ FieldsetCheck.addEventListener('change', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Seleciona o elemento do botão da sidebar
+  var sidebarToggle = document.querySelector('.sidebar-toggle');
+
+  // Adiciona um ouvinte de evento de clique ao botão da sidebar
+  sidebarToggle.addEventListener('click', function(event) {
+      // Evita o comportamento padrão de redirecionamento do link
+      event.preventDefault();
+      
+      // Chama a função para abrir/fechar a sidebar
+      toggleSidebar();
+  });
+});
+
+function toggleSidebar() {
+  var sidebar = document.querySelector('.sidebar');
+  var mainContent = document.querySelector('.main-content');
+
+  sidebar.classList.toggle('show');
+  mainContent.classList.toggle('shifted');
+}
+

@@ -1,3 +1,35 @@
+
+
+#barras{
+  font-size: 38px;
+  color: white;
+}
+.custom-bg{
+  background-color: #007A7C;
+}
+.sidebar{
+   
+  margin: auto;
+  padding: 0px 15px 0px 0px;
+  display: inline-block;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+}
+#sidebar{
+  background-color: #009699;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.cor{
+  color: white;
+  
+  
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
 .container-main {
 
   position: relative;
@@ -48,4 +80,48 @@
   padding: 20px 50px 20px 50px;
   top: 25%;
   left: 25%;
+}
+#foto{
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+@media (max-width: 575.98px) {
+  .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: -250px; /* Esconde a barra lateral por padrão */
+      width: 250px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      transition: left 0.3s ease; /* Adiciona uma transição suave para a animação */
+  }
+  .sidebar.show {
+      left: 0; /* Mostra a barra lateral quando a classe .show é adicionada */
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px; /* Esconde a barra lateral por padrão */
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  transition: left 0.3s ease; /* Adiciona uma transição suave para a animação */
+}
+
+.sidebar.show {
+  left: 0; /* Mostra a barra lateral quando a classe .show é adicionada */
+}
+
+.main-content {
+  margin-left: 0; /* Define uma margem padrão do lado esquerdo */
+  transition: margin-left 0.3s ease; /* Adiciona uma transição suave para a animação */
+}
+
+.main-content.shifted {
+  margin-left: 250px; /* Move o conteúdo principal para a direita para acomodar a barra lateral */
 }
