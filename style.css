@@ -47,9 +47,9 @@
 a {
   text-decoration: none; /* Remove o sublinhado dos links */
 }
-.cor1:hover{
-  color: #f0f8ff;
-  text-decoration: none;
+.cor1:hover {
+  color: aliceblue; /* Manter a mesma cor quando o mouse passa por cima */
+  text-decoration: none; /* Manter a mesma decoração de texto quando o mouse passa por cima */
 }
 
 .container-main {
