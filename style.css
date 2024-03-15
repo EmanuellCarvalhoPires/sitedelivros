@@ -25,11 +25,32 @@
   
   
 }
+.cor1{
+  
+  display: flex;
+  color: aliceblue;
+  font-size: 20px;
+  margin: 0px 20px;
+}
+
+#titulo1{
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+}
+
+.semDecoNoText{
+  text-decoration: none;
+}
 
 a {
   text-decoration: none; /* Remove o sublinhado dos links */
 }
-
+.cor1:hover {
+  color: aliceblue; /* Manter a mesma cor quando o mouse passa por cima */
+  text-decoration: none; /* Manter a mesma decoração de texto quando o mouse passa por cima */
+}
 .container-main {
 
   position: relative;
