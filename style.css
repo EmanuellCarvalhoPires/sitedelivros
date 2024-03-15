@@ -128,21 +128,21 @@ a {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -280px; /* Esconde a barra lateral por padrão */
+  right: -280px; /* Esconde a barra lateral por padrão */
   width: 250px;
   background-color: #f8f9fa;
   padding: 20px;
-  margin-left: 22px;
-  transition: left 0.3s ease; /* Adiciona uma transição suave para a animação */
+  margin-right: 22px;
+  transition: right 0.3s ease; /* Adiciona uma transição suave para a animação */
 }
 
 .sidebar.show {
-  left: 0; /* Mostra a barra lateral quando a classe .show é adicionada */
+  right: 0; /* Mostra a barra lateral quando a classe .show é adicionada */
 }
 
 .main-content {
   margin-left: 0px; /* Define uma margem padrão do lado esquerdo */
-  transition: margin-left 0.3s ease; /* Adiciona uma transição suave para a animação */
+  transition: margin-right 0.3s ease; /* Adiciona uma transição suave para a animação */
 }
 
 .main-content.shifted {
