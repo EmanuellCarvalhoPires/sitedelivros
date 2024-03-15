@@ -48,7 +48,7 @@ a {
   text-decoration: none; /* Remove o sublinhado dos links */
 }
 .cor1:hover{
-  color: #f0f8ff;
+  color: white;
   text-decoration: none;
 }
 .container-main {
