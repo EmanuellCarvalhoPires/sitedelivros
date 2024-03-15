@@ -43,9 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function toggleSidebar() {
-  var sidebar = document.querySelector('.sidebar');
-  var mainContent = document.querySelector('.main-content');
-
+  var sidebar = document.getElementById('sidebar');
   sidebar.classList.toggle('show');
-  mainContent.classList.toggle('shifted');
 }
