@@ -49,4 +49,3 @@ function toggleSidebar() {
   sidebar.classList.toggle('show');
   mainContent.classList.toggle('shifted');
 }
-
