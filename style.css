@@ -46,6 +46,7 @@
 
 a {
   text-decoration: none; /* Remove o sublinhado dos links */
+  color: white;
 }
 .cor1:hover {
   color: aliceblue; /* Manter a mesma cor quando o mouse passa por cima */
@@ -147,6 +148,17 @@ a {
 
 .main-content.shifted {
   margin-left: 250px; /* Move o conteúdo principal para a direita para acomodar a barra lateral */
+}
+
+.nav-lin{
+  margin: 0px 20px;
+  text-decoration: none;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.nav-lin:hover{
+  color: whitesmoke;
 }
 .custom-button1 {
   background-color: #651771;
