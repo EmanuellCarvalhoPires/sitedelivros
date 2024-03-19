@@ -5,7 +5,7 @@
   color: white;
 }
 .custom-bg{
-  background-color: #007A7C;
+  background-color: #651771;
 }
 .sidebar{
    
@@ -16,7 +16,7 @@
   border-radius: 4px;
 }
 #sidebar{
-  background-color: #009699;
+  background-color: #651771;
   margin-top: 100px;
   margin-bottom: 200px;
 }
@@ -72,7 +72,7 @@ a {
           margin-bottom: 100px;
 }
           .custom-bg {
-    background-color: #007A7C;
+    background-color: #651771;
   }
 
 #navigation{
@@ -89,7 +89,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    width: 500px;
+    width: 1000px;
     border-bottom: solid 1px black;
   }
 
@@ -147,4 +147,39 @@ a {
 
 .main-content.shifted {
   margin-left: 250px; /* Move o conteúdo principal para a direita para acomodar a barra lateral */
+}
+.custom-button1 {
+  background-color: #651771;
+  border-color: #651771;
+}
+.custom-button1:hover {
+  background-color: #4d1262;
+  border-color: #4d1262;
+}
+/* Livros */
+.livros{
+
+  display: flex;
+  justify-content: center;
+  width: 650px ;    
+  margin: 0 auto; /* Isso centraliza a div horizontalmente */
+  padding: 20px;
+  
+}
+
+.espaço{
+  margin: 0px 10px 0px 10px;
+  border: wheat 1px solid;
+  border-radius: 10px;
+  
+  
+}
+
+
+/* Livros especificos */
+
+.tamanhodivLivros{
+  max-height: 269px;
+  max-width: 187px;
+  margin-bottom: 10px;
 }
