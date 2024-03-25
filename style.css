@@ -3,6 +3,9 @@
 #barras{
   font-size: 38px;
   color: white;
+  position: absolute;
+  left: 0.3em;
+
 }
 .custom-bg{
   background-color: #651771;
@@ -30,7 +33,7 @@
   display: flex;
   color: aliceblue;
   font-size: 20px;
-  margin: 0px 20px;
+  margin: 0px 20px 0px 40px;
 }
 
 #titulo1{
@@ -129,25 +132,25 @@ a {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: -280px; /* Esconde a barra lateral por padrão */
+  left: -280px; /* Esconde a barra lateral por padrão */
   width: 250px;
   background-color: #f8f9fa;
   padding: 20px;
-  margin-right: 22px;
-  transition: right 0.3s ease; /* Adiciona uma transição suave para a animação */
+  margin-left: 22px;
+  transition: left 0.3s ease; /* Adiciona uma transição suave para a animação */
 }
 
 .sidebar.show {
-  right: 0; /* Mostra a barra lateral quando a classe .show é adicionada */
+  left: 0; /* Mostra a barra lateral quando a classe .show é adicionada */
 }
 
 .main-content {
-  margin-left: 0px; /* Define uma margem padrão do lado esquerdo */
-  transition: margin-right 0.3s ease; /* Adiciona uma transição suave para a animação */
+  margin-right: 0px; /* Define uma margem padrão do lado esquerdo */
+  transition: margin-left 0.3s ease; /* Adiciona uma transição suave para a animação */
 }
 
 .main-content.shifted {
-  margin-left: 250px; /* Move o conteúdo principal para a direita para acomodar a barra lateral */
+  margin-right: 250px; /* Move o conteúdo principal para a direita para acomodar a barra lateral */
 }
 
 .nav-lin{
