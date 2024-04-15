@@ -49,21 +49,3 @@ function toggleSidebar() {
 
 // Validação de formulário
 
-function clicou() {
-
-  const email = document.getElementById('emailform')
-  const aviso = document.getElementById('avisos')
-  const senha = document.getElementById('senhaform')
-  const avisos = document.getElementById('aviso')
-  if(email.value === "") {
-    aviso.innerHTML = "Digite um email válido."
-    aviso.style.color = "red"
-    aviso.style.fontSize = "15px"
-  }
-
-  if(senha.value === "") {
-    avisos.innerHTML = "Digite uma senha válida."
-    avisos.style.color = "red"
-    avisos.style.fontSize = "15px"
-  }
-}
